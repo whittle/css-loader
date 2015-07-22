@@ -13,6 +13,9 @@ describe("simple", function() {
 	test("simple", ".class { a: b c d; }", [
 		[1, ".class { a: b c d; }", ""]
 	]);
+	test("escaping", ".class:before { content: \"\\46\"; }", [
+		[1, ".class:before { content: \"\\46\"; }", ""]
+	]);
 	test("simple2", ".class { a: b c d; }\n.two {}", [
 		[1, ".class { a: b c d; }\n.two {}", ""]
 	]);
